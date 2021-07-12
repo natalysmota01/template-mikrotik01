@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+* {margin: 0; padding: 0; border: none; box-sizing: border-box;}
+hr {width: 40px; border-bottom: 3px solid rgb(242, 66, 21); margin: 20px auto 0 auto;}
+a {text-decoration: none;}
+
+/*=========== HEADER ===========*/
+.top-header {width: 100%; float: left;}
+
+/*== MENU MOBILE ==*/
+.top-header .nav-menu {width: 100%; float: left; padding: 15px 0; border-top: 4px solid rgb(242, 66, 21);}
+.top-header .logotipo {width: 200px; float: left; margin-left: 5%;}
+.top-header .logotipo img {width: 100%;}
+.top-header .nav-menu .btn-menu {width: 34px; float: right; margin: 7px 5% 0 0; background-color: transparent; border: none;}
+.top-header .nav-menu .btn-menu figure {width: 34px;}
+.top-header .nav-menu .btn-menu figure img {width: 100%;}
+.top-header .nav-menu .btn-menu:hover {cursor: pointer;}
+.top-header .nav-menu .menu {width: 230px; height: 100%; float: left; background-color: #1C1C1C; position: fixed; left: 0; top: 0; display: none;}
+.top-header .nav-menu .menu .logotipo-menu {width: 200px; margin: 30px auto 0 auto;}
+.top-header .nav-menu .menu .logotipo-menu img {width: 100%;}
+.top-header .nav-menu .menu ul {margin-top: 30px;}
+.top-header .nav-menu .menu ul li {padding: 20px; border-bottom: 1px solid #363636;}
+.top-header .nav-menu .menu ul li a {font-size: 1.2em; font-family: 'Raleway', sans-serif; color: #FFF;}
+.top-header .nav-menu .menu ul li a:hover {color: rgb(242, 66, 21);}
+
+/*=========== HOMEPAGE - BANNER ===========*/
+.slider {width: 100%; float: left; overflow: hidden;}
+.slider img {width: 100%; height: 100%;}
+.slider ul {display: flex; padding: 0; width: 400%; animation: cambio 20s infinite;}
+.slider ul li {width: 100%; list-style: none;}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+/*=========== HOMEPAGE - WELCOME ===========*/
+.welcome {width: 100%; float: left; padding: 150px 0; background-image: url(images/wallpaper1.jpg); background-size: cover;
+            background-repeat: no-repeat;}
+.welcome header {width: 240px; font-size: 4em; font-family: 'Raleway', sans-serif; font-weight: bold; margin-left: 5%;
+                    border-bottom: 1px solid #828282; color: #1C1C1C; padding-bottom: 20px;}
+.welcome p {margin: 60px 5% 0 5%; font-size: 1.2em; font-family: 'Raleway', sans-serif; line-height: 28px; color: #4F4F4F;}
+
+/*=========== HOMEPAGE - AVAILABLE PRICES ===========*/
+.available-prices {width: 100%; float: left;}
+.available-prices .prices {width: 100%;}
+.available-prices .prices .price {width: 100%; background-color: rgb(242, 242, 242); padding: 50px 0;}
+.available-prices .prices .price:nth-child(2) {background-color: rgb(238, 238, 238);}
+.available-prices .prices .price .type-plan {text-align: center; font-size: 10em; font-family: 'Arial', sans-serif; color: #528B8B;}
+.available-prices .prices .price .txt-mbps {width: 100px; height: 100px; border: 1px solid rgb(233, 233, 233); border-radius: 100%;
+                                                background-color: #FFF; margin: -70px auto 0 auto; position: relative;}
+.available-prices .prices .price .txt-mbps p {text-align: center; margin-top: 37px; font-family: 'Raleway', sans-serif; color: #696969;}
+.available-prices .prices .price h1 {width: 100%; text-align: center; padding: 50px 0; font-size: 3.5em; font-family: 'Raleway', sans-serif;
+                                        color: #363636;}
+.available-prices .prices .price .price-plan {width: 100%; text-align: center; font-size: 2.5em; font-family: 'Arial', sans-serif;
+                                                color: #4F4F4F;}
+.available-prices .prices .price .description-plan {width: 100%; padding: 20px;}
+.available-prices .prices .price p {text-align: center; font-size: 1.2em; font-family: 'Raleway', sans-serif; color: #696969;}
+.available-prices .prices .price .btn-plans {width: 100%;  display: block; margin-top: 40px;}
+.available-prices .prices .price .btn-plans a {width: 150px; color: #FFF; font-family: 'Raleway', sans-serif;
+                                                display: block;text-align: center; background-color: rgb(156, 172, 187); margin: 0 auto;
+                                                padding: 10px 0;}
+.available-prices .prices .price .btn-plans a:hover {background-color: rgb(129, 150, 169);}
+
+/*=========== HOMEPAGE - ABOUT ===========*/
+.about {width: 100%; float: left; background-image: url(images/wallpaper2.jpg); background-repeat: no-repeat; background-size: cover;
+        padding: 200px 0;}
+.about .txt-about {width: 90%; margin: 0 auto;}
+.about .txt-about header {text-align: center; font-size: 3.5em; font-family: 'Arial', sans-serif; color: #4F4F4F;}
+.about .txt-about p {text-align: center; padding-top: 30px; font-family: 'Raleway', sans-serif; font-size: 1.2em; line-height: 30px;
+                       color: #4F4F4F;}
+.about .btn-ler-mais {width: 100%; float: left;}
+.about .btn-ler-mais a {width: 150px; display: block; background-color: rgb(156, 172, 187); padding: 15px 0; margin: 30px auto 0 auto;
+                        text-align: center; font-size: 1.1em; color: #FFF; font-family: 'Raleway', sans-serif;}
+.about .btn-ler-mais a:hover {background-color: rgb(129, 150, 169);}
+
+/*=========== HOMEPAGE - CONTACT ===========*/
+#contact {width: 100%; float: left; background-image: url(images/wallpaper3.jpg); background-size: cover; background-repeat: no-repeat;
+            background-attachment: fixed; background-position: center; padding: 100px 0;}
+#contact header {text-align: center; font-size: 3em; font-family: 'Arial', sans-serif; font-weight: bold; color: #FFF;}
+#contact p {text-align: center; font-size: 1.1em; color: #FFF; font-family: 'Raleway', sans-serif; margin-top: 30px;}
+#contact .form-contact {width: 90%; margin: 80px auto 0 auto;}
+#contact .form-contact input, textarea {width: 100%; padding: 12px 0 12px 5px; margin-bottom: 20px; font-family: 'Raleway', sans-serif;
+                                        font-size: .9em; color: rgb(245, 245, 245); background-color: transparent;
+                                        border-bottom: 1px solid rgb(155, 155, 155);}
+#contact .form-contact .btn-enviar {width: 150px; padding: 10px 0; font-size: 1em; background-color: rgb(156, 172, 187); color: #FFF;
+                                    font-family: 'Raleway', sans-serif;}
+#contact .form-contact .btn-enviar:hover {cursor: pointer; background-color: rgb(129, 150, 169);}
+
+/*=========== FOOTER ===========*/
+.footer {width: 100%; float: left; border-top: 3px solid rgb(242, 66, 21);}
+.footer .network {width: 100%; float: left; background-color: #363636; padding: 25px 0; text-align: center;}
+.footer .network a {padding: 0 5px;}
+.footer .network a img {width: 22px;}
+.footer .copyright {width: 100%; float: left; background-color: #1C1C1C; padding: 10px;}
+.footer .copyright p {color: #696969; text-align: center; font-family: 'Arial', sans-serif; font-size: .9em;}
+
+/*===================================== PAGE ABOUT =====================================*/
+.banner-about {width: 100%; float: left; background-image: url(images/banner4.jpg); background-position: center; background-repeat: no-repeat;
+                background-size: cover; padding: 300px 0 100px 0; font-family: 'Raleway', sans-serif;}
+.banner-about header {font-size: 3.3em; margin-left: 5%;  color: #FFF;}
+.banner-about p {font-size: 1.3em; color: #FFF; margin-top: 10px;}
+.about-us {width: 100%; float: left; background-image: url(images/wallpaper4.jpg); background-position: center; background-repeat: no-repeat;
+                background-size: cover; padding: 100px 0; font-family: 'Raleway', sans-serif;}
+.about-us header {margin-left: 5%; font-size: 2.2em; color: #4F4F4F;}
+.about-us p {margin: 50px 5% 0 5%; font-size: 1em; line-height: 28px; color: #4F4F4F;}
+
+/*===================================== PAGE PLANS =====================================*/
+.banner-plans {width: 100%; float: left; padding: 120px 0; background-image: url(images/banner5.jpg); background-position: center;
+                background-repeat: no-repeat; background-size: cover;}
+.banner-plans header, p {font-size: 2.3em; margin: 0 5%; font-family: 'Raleway', sans-serif; color: #1C1C1C;}
+.banner-plans p {font-size: 1.2em; margin-top: 20px; color: #4F4F4F;}
+.page-available-plans {width: 100%; float: left; padding: 100px 0;}
+.page-available-plans .page-plans {width: 90%; margin: 0 auto;}
+.page-available-plans .page-plans .page-plan {width: 100%; box-shadow: 1px 2px 5px #333; border-radius: 10px; margin-bottom: 50px;}
+.page-available-plans .page-plans .txt-mega {width: 100%; padding: 35px 0; background-color: rgb(135, 49, 235); border-radius: 10px 10px 0 0;
+                                                text-align: center; font-size: 2.8em; font-family: 'Arial', sans-serif; color: #FFF;
+                                                font-weight: bold;}
+.page-available-plans .page-plans .txt-description-plan {width: 100%; padding: 35px 0; margin: 0 auto;}
+.page-available-plans .page-plans .txt-description-plan p {text-align: center; padding: 10px 0; font-size: 1.1em; text-transform: uppercase;}
+.page-available-plans .page-plans .txt-price-plan {width: 100%; text-align: center; font-size: 4em; font-family: 'Arial', sans-serif;}
+.page-available-plans .page-plans .btn-sign {width: 100%; padding: 50px 0;}
+.page-available-plans .page-plans .btn-sign a {width: 150px; padding: 10px 0; text-align: center; display: block;
+                                                background-color: rgb(240, 204, 0); margin: 0 auto; font-family: 'Raleway', sans-serif;
+                                                color: #1C1C1C; font-size: 1.1em;}
+.notes {width: 100%; float: left; padding: 120px 0; background-image: url(images/wallpaper5.jpg); background-position: center;
+        background-repeat: no-repeat; background-size: cover;}
+.notes header {margin-left: 5%; font-size: 3em; font-family: 'Raleway', sans-serif;}
+.notes p {font-size: 1.1em; line-height: 28px; margin-top: 40px;}
+
+/*===================================== PAGE ERROR =====================================*/
+.page-error {width: 100%; float: left; padding: 15% 0; background-color: rgb(229, 229, 229);}
+.page-error figure {width: 256px; margin: 0 auto;}
+.page-error figure img {width: 100%;}
+.page-error header {font-size: 6em; font-family: 'Arial', sans-serif; text-align: center;}
+.page-error p {font-size: 1.5em; text-align: center;}
+.page-error .link-homepage {width: 100%; text-align: center; padding-top: 30px;}
+.page-error .link-homepage a {text-align: center; font-family: 'Raleway', sans-serif; color: #4F4F4F;}
+.page-error .link-homepage a:hover {color:rgb(242, 66, 21);}
+
+/*=========== RESPONSIVE ===========*/
+@media screen and (min-width: 900px) {
+    .top-header .nav-menu .btn-menu {display: none;}
+    .top-header .nav-menu .menu .logotipo-menu {display: none;}
+    .top-header .nav-menu .menu {width: auto; height: 40px; line-height: 45px; margin: 5px 5% 0 0; float: right;
+                                    background-color: transparent; display: block !important; position: static;}
+    .top-header .nav-menu .menu ul {margin-top: 0; list-style-type: none;}
+    .top-header .nav-menu .menu ul li {padding: 0; float: left; border-bottom: none;}
+    .top-header .nav-menu .menu ul li a {padding: 20px; color: #828282; font-size: 1em;}
+    .welcome p {width: 70%;}
+    .banner-plans header {font-size: 3.5em;}
+    .banner-plans p {font-size: 1.6em;}
+    .page-available-plans .page-plans {width: 100%; float: left;}
+    .page-available-plans .page-plans .page-plan {width: 30%; float: left; margin: 0 1% 0 2%;}
+}
+@media screen and (min-width: 980px) {
+    .welcome p {width: 50%;}
+    .available-prices .prices .price {width: 33.33%; float: left;}
+    .about .txt-about {width: 50%; float: right; margin-right: 5%;}
+    #contact .form-contact input {width: 48%; float: left;}
+    .page-available-plans .page-plans .page-plan {width: 21.8%;}
+    .notes p {width: 70%;}
+}
+@media screen and (min-width: 1280px) {
+    .notes p {width: 50%;}
+}

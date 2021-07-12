@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Nataly S. Mota">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Empresa especializada em prover internet de qualidade">
+    <meta name="keywords" content="provedor, provedor de internet, internet, internet banda larga">
+    <title>Empresa - Login</title>
+    <style type="text/css">
+        * {margin: 0; padding: 0; border: none; box-sizing: border-box;}
+        a {text-decoration: none;}
+        .page-login {width: 100%; float: left; background-image: url(images/wallpaper6.jpg); background-position: center;
+                        background-repeat: no-repeat; background-size: cover; background-attachment: fixed; padding: 80px 0 100px 0;}
+        .page-login .logotipo {width: 200px; margin-left: 5%;}
+        .page-login .logotipo img {width: 100%;}
+        .page-login .space-commercial {width: 90%; margin: 100px auto 0 auto;}
+        .page-login .space-commercial header, p {font-size: 2em; color: #FFF; font-family: 'Raleway', sans-serif; text-align: center;}
+        .page-login .space-commercial p {font-size: 1em; margin-top: 10px;}
+        .page-login .space-login {width: 90%; background-color: #FFF; padding: 50px 0; border-top: 10px solid rgb(242, 66, 21);
+                                    margin: 70px auto 0 auto; border-radius: 5px;}
+        .page-login .space-login .logotipo {width: 200px; margin: 0 auto;}
+        .page-login .space-login .logotipo img {width: 100%;}
+        .page-login .space-login table {width: 100%; margin-top: 20px;}
+        .page-login .space-login table tr td form table tr td input {width: 97%; padding: 13px 0 13px 5px; margin-bottom: 10px;
+                                                        border-radius: 5px; font-family: 'Raleway', sans-serif; color: #363636;
+                                                        background-color: rgb(238, 238, 238);}
+        .page-login .space-login table tr td form table tr td input[type='submit'] {border-radius: 0; text-transform: uppercase;
+                                                                                    background-color: rgb(242, 66, 21); color: #FFF;}
+        .page-login .space-login table tr td form table tr td input[type='submit']:hover {cursor: pointer;}
+        
+        /*=============== RESPONSIVE ===============*/
+        @media screen and (min-width: 440px) {
+            .page-login .space-login {width: 350px;}
+        }
+        @media screen and (min-width: 900px) {
+            .page-login .space-commercial {width: 800px;}
+            .page-login .space-commercial header {font-size: 3em;}
+            .page-login .space-commercial p {font-size: 1.8em;}
+        }
+    </style>
+</head>
+<body>
+    
+    $(if chap-id)
+        <form name="sendin" action="$(link-login-only)" method="post">
+            <input type="hidden" name="username" />
+            <input type="hidden" name="password" />
+            <input type="hidden" name="dst" value="$(link-orig)" />
+            <input type="hidden" name="popup" value="true" />
+        </form>
+
+        <script type="text/javascript" src="/md5.js"></script>
+        <script type="text/javascript">
+        <!--
+            function doLogin() {
+            document.sendin.username.value = document.login.username.value;
+            document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+            document.sendin.submit();
+            return false;
+            }
+        //-->
+        </script>
+    $(endif)
+
+    <div class="page-login">
+        <figure class="logotipo">
+            <a href="#" title="">
+                <img src="images/logotipo.png" alt="" title="" />
+            </a>
+        </figure>
+        
+        <section class="space-commercial">
+            <header>Venha fazer parte da nossa história</header>
+            <p>Melhores planos, melhor sinal</p>
+        </section>
+        
+        <div class="space-login">
+            <figure class="logotipo">
+                <a href="#" title="">
+                    <img src="images/logotipo.png" alt="" title="" />
+                </a>
+            </figure>
+            
+            <table>
+                <tr>
+                    <td valign="bottom">
+                        <form name="login" action="$(link-login-only)" method="post" $(if chap-id) onSubmit="return doLogin()" $(endif)>
+                            <input type="hidden" name="dst" value="$(link-orig)" />
+                            <input type="hidden" name="popup" value="true" />
+
+                            <table>
+                                <tr><td align="right"></td>
+                                    <td><input name="username" type="text" value="$(username)"/></td>
+                                </tr>
+                                <tr><td align="right"></td>
+                                    <td><input name="password" type="password"/></td>
+                                </tr>
+                                <tr><td>&nbsp;</td>
+                                    <td><input type="submit" value="Logar" /></td>
+                                </tr>
+                            </table>
+                        </form>
+                    </td>
+                </tr>
+                <tr><td align="center"><a href="http://www.mikrotik.com" target="_blank" style="border: none;"><img src="images/logobottom.png" alt="mikrotik" /></a></td></tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
